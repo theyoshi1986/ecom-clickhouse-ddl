@@ -41,6 +41,7 @@ select * from default.dump_orders_prod;
 --Импортируем данные 0
 cat /project/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_0.csv | clickhouse-client --format_csv_delimiter=";" --host clickhouse-server --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 cat /media/sf_projects/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_0.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
+cat /home/golovachev/projects/prod_docs_to_clickhouse_doctype_2-3-4-61-62-63/orders_0_.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 
 --29 629 596
 select count() from default.dump_orders_prod;
@@ -48,6 +49,7 @@ select count() from default.dump_orders_prod;
 --Импортируем данные 1
 cat /project/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_1.csv | clickhouse-client --format_csv_delimiter=";" --host clickhouse-server --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 cat /media/sf_projects/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_1.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
+cat /home/golovachev/projects/prod_docs_to_clickhouse_doctype_2-3-4-61-62-63/orders_1.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 
 --59 284 298
 select count() from default.dump_orders_prod;
@@ -55,6 +57,7 @@ select count() from default.dump_orders_prod;
 --Импортируем данные 2
 cat /project/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_2.csv | clickhouse-client --format_csv_delimiter=";" --host clickhouse-server --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 cat /media/sf_projects/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_2.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
+cat /home/golovachev/projects/prod_docs_to_clickhouse_doctype_2-3-4-61-62-63/orders_2.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 
 --88 920 526
 select count() from default.dump_orders_prod;
@@ -62,6 +65,7 @@ select count() from default.dump_orders_prod;
 --Импортируем данные 3
 cat /project/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_3.csv | clickhouse-client --format_csv_delimiter=";" --host clickhouse-server --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 cat /media/sf_projects/prod_docs_to_clickhouse_doctype_2-61-62-63/orders_3.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
+cat /home/golovachev/projects/prod_docs_to_clickhouse_doctype_2-3-4-61-62-63/orders_3.csv | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dump_orders_prod FORMAT CSV";
 
 --111 707 697
 select count() from default.dump_orders_prod;

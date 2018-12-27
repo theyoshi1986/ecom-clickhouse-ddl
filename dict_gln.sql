@@ -14,8 +14,12 @@ create table default.dict_gln
 )
 engine = MergeTree order by gln;
 
+-- опируем данные
+scp -i C:\Users\dmitriy.golovachev\Documents\id_golovachev_ed D:\projects\GLN_ќ ¬Ёƒ\GLN_for_clickhouse.csv golovachev@192.168.17.94:/home/golovachev/projects/GLN_OKVED/
+
 --»мпортируем данные
 cat "/media/sf_projects/GLN_ќ ¬ЁƒФ/GLN дл€ clickhouse.csv" | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dict_gln FORMAT CSV";
+cat "/home/golovachev/projects/GLN_OKVEDФ/GLN_for_clickhouse.csv" | clickhouse-client --format_csv_delimiter=";" --input_format_allow_errors_num=1000000000 --input_format_allow_errors_ratio=1 --query="INSERT INTO default.dict_gln FORMAT CSV";
 
 select *
 	from default.dict_gln;
